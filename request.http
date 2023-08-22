@@ -1,4 +1,24 @@
 POST http://localhost:3000/api/short-links
+Content-Type: application/json
+
+{
+    "title": "naver",
+    "url": "https://naver.com"
+}
+
+###
+
+GET http://localhost:3000/api/short-links/64e404ba7887a5df180ca83c
+
+###
+
+PATCH http://localhost:3000/api/short-links/64e404ba7887a5df180ca83c
+Content-Type: application/json
+
+{
+    "title": "naverPATCH",
+    "url": "https://naver.com"
+}
 
 ###
 
@@ -6,5 +26,38 @@ GET http://localhost:3000/api/short-links
 
 ###
 
-PATCH http://localhost:3000/api/short-links
+DELETE http://localhost:3000/api/short-links/64e404ba7887a5df180ca83c
 
+
+###
+
+POST http://localhost:3000/api/qrcodes
+Content-Type: application/json
+
+{
+    "title": "qrcode5",
+    "url": "https://naver.com"
+}
+
+###
+
+GET http://localhost:3000/api/qrcodes
+
+###
+
+GET http://localhost:3000/api/qrcodes/64e44b017887a5df180ca84d
+
+###
+
+
+PATCH http://localhost:3000/api/qrcodes/64e44b017887a5df180ca84d
+Content-Type: application/json
+
+{
+    "title": "qrcodePATCH",
+    "url": "https://naver.com"
+}
+
+###
+
+DELETE http://localhost:3000/api/qrcodes/64e44b067887a5df180ca84f

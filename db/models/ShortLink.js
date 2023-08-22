@@ -4,7 +4,6 @@ const shortLinkSchema = new mongoose.Schema(
 	{
 		title: { type: String, default: "" },
 		url: { type: String, default: "" },
-		shortUrl: { type: String, default: "" },
 	},
 	{
 		timestamps: true,
