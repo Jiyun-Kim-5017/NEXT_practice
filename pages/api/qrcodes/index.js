@@ -1,17 +1,17 @@
 import dbConnect from "@/db/dbConnect";
-import Qrcode from "@/db/models/Qrcodes";
+import QRCode from "@/db/models/QRCode";
 
 export default async function handler(req, res) {
 	await dbConnect();
 
 	switch (req.method) {
 		case "POST":
-			const newQrcode = await Qrcode.create(req.body);
-			res.status(201).send(newQrcode);
+			const newQRCode = await QRCode.create(req.body);
+			res.status(201).send(newQRCode);
 			break;
 
 		case "GET":
-			const qrcodes = await Qrcode.find();
+			const qrcodes = await QRCode.find();
 			res.send(qrcodes);
 			break;
 

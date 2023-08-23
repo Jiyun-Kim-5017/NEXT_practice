@@ -2,13 +2,13 @@ POST http://localhost:3000/api/short-links
 Content-Type: application/json
 
 {
-    "title": "naver",
-    "url": "https://naver.com"
+    "title": "naverShort",
+    "url": "www.naver.com"
 }
 
 ###
 
-GET http://localhost:3000/api/short-links/64e404ba7887a5df180ca83c
+GET http://localhost:3000/api/short-links/64e4680bd220700947935a7e
 
 ###
 
@@ -26,7 +26,7 @@ GET http://localhost:3000/api/short-links
 
 ###
 
-DELETE http://localhost:3000/api/short-links/64e404ba7887a5df180ca83c
+DELETE http://localhost:3000/api/short-links/64e46c15d220700947935a86
 
 
 ###

@@ -12,12 +12,12 @@ export default async function handler(req, res) {
 			break;
 
 		case "PATCH":
-			const newShortLink = await ShortLink.findByIdAndUpdate(
+			const updatedShortLink = await ShortLink.findByIdAndUpdate(
 				id,
 				req.body,
 				{ new: true }
 			);
-			res.send(newShortLink);
+			res.send(updatedShortLink);
 			break;
 
 		case "DELETE":
@@ -26,7 +26,7 @@ export default async function handler(req, res) {
 			break;
 
 		default:
-			res.send();
+			res.status(404).send();
 			break;
 	}
 }

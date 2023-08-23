@@ -10,7 +10,7 @@ const qrcodeSchema = new mongoose.Schema(
 	}
 );
 
-const Qrcode =
-	mongoose.models["Qrcode"] || mongoose.model("Qrcode", qrcodeSchema); //이름, 초기 스키마
+const QRCode =
+	mongoose.models["QRCode"] || mongoose.model("QRCode", qrcodeSchema);
 
-export default Qrcode;
+export default QRCode;
